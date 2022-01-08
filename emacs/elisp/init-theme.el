@@ -1,8 +1,9 @@
 (global-display-line-numbers-mode t)
 (global-hl-line-mode t)
 
-(straight-use-package 'kaolin-themes)
-(load-theme 'kaolin-light t)
+
+(straight-use-package 'solarized-theme)
+(load-theme 'solarized-light t)
 
 ;; (straight-use-package
 ;;  '(lazycat-theme :type git
