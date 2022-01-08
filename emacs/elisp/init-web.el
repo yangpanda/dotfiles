@@ -1,4 +1,8 @@
 (straight-use-package 'web-mode)
+(straight-use-package
+ '(highlight-matching-tag :type git
+			  :host github
+			  :repo "manateelazycat/highlight-matching-tag"))
 
 ;;; web-mode
 (setq-default
@@ -17,5 +21,10 @@
 	       '("\\.css?\\'". web-mode)
 	       '("\\.vue?\\'" . web-mode)))
   (add-to-list 'auto-mode-alist item))
+
+
+;;; highlight-matching-tag
+(require 'highlight-matching-tag)
+(highlight-matching-tag +1)
 
 (provide 'init-web)

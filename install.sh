@@ -9,7 +9,7 @@ noto-fonts-cjk noto-fonts-emoji ttf-hack\
 mpv zathura zathura-pdf-poppler \
 python-pip gcc clang cargo base-devel base-devel \
 clash \
-fcitx5 fcitx5-chinese-addons fcitx5-qt fcitx5-gtk fcitx5-configtool fcitx5-material-color"
+librime fcitx5 fcitx5-chinese-addons fcitx5-qt fcitx5-gtk fcitx5-configtool fcitx5-material-color"
 
 ARCHLINUXCN_PACKAGES="netease-cloud-music qq-music-bin yay"
 AUR_PACKAGES="microsoft-edge-stable"

@@ -14,5 +14,9 @@
 (require 'init-lsp)
 (require 'init-edit)
 (require 'init-tree-sitter)
+(require 'init-org)
+(require 'init-rime)
+;; (require 'init-grammatical-edit)
+(require 'init-elisp)
 
 (provide 'site-init)

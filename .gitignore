@@ -6,3 +6,8 @@ extensions/
 *.eld
 .lsp-session-v1
 eaf/
+bookmarks
+build/
+installation.yaml
+luna_pinyin.userdb/
+user.yaml
