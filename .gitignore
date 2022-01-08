@@ -1,0 +1,8 @@
+var/
+recentf
+straight/
+transient/
+extensions/
+*.eld
+.lsp-session-v1
+eaf/
