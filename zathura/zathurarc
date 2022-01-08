@@ -1,0 +1,23 @@
+# 以宽度自适应方式打开
+set adjust-open "width"
+
+# 隐藏底部 status bar
+set guioptions ""
+
+#只显示文件名，否则显示完整路径
+set window-title-basename true
+
+#增强搜索，实时搜索
+set incremental-search true
+
+#显示右侧进度条
+set show-v-scrollbar true
+
+#粘贴版
+set selection-clipboard clipboard
+
+#默认高度，像素
+set window-height 900
+
+#默认宽度
+set window-width 1300
