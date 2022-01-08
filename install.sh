@@ -51,6 +51,9 @@ git config --global user.email "gnaymuyi@163.com"
 mkdir $HOME/.cargo
 ln -sfv $PWD/rust/config $HOME/.cargo/
 
+#emacs
+ln -sfv $PWD/emacs $HOME/.config/
+
 # clash
 mkdir $HOME/.config/clash
 ln -sfv $PWD/clash ~/.config/
