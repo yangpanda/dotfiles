@@ -5,7 +5,7 @@ set -e
 PWD=$(pwd)
 
 ARCH_PACKAGES="git openssh alacritty \
-starship ranger bat exa ripgrep fd fzf zoxide zellij \
+starship ranger bat exa ripgrep fd fzf zoxide zellij grex tokei \
 neovim emacs \
 noto-fonts-cjk noto-fonts-emoji ttf-hack\
 mpv zathura zathura-pdf-poppler \

@@ -15,7 +15,7 @@ if [ "$(command -v exa)" ]; then
 fi
 
 # zoxide
-eval "$(zoxide init bash)"
+eval "$(zoxide init --cmd j bash)"
 
 # bat
 if [ "$(command -v bat)" ]; then
@@ -24,4 +24,3 @@ fi
 
 # nvim
 alias vim='nvim'
-
