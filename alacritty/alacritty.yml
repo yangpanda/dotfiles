@@ -10,16 +10,16 @@ window:
 font:
   size: 12
   normal:
-    family: Fira Mono
+    family: FiraMono Nerd Font
     style: Regular
   bold:
-    family: Fira Mono
+    family: FiraMono Nerd Font
     style: Bold
   italic:
-    family: Fira Mono
+    family: FiraMono Nerd Font
     style: Italic
   bold_italic:
-    family: Fira Mono
+    family: FiraMono Nerd Font
     style: Bold Italic
 
 cursor:
