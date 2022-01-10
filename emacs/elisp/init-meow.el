@@ -2,7 +2,7 @@
 
 (defun meow-setup ()
   (setq meow-cheatsheet-layout meow-cheatsheet-layout-qwerty)
-  (meow-motion-overwrite-define-key
+    (meow-motion-overwrite-define-key
    '("j" . meow-next)
    '("k" . meow-prev)
    '("<escape>" . ignore))
@@ -27,6 +27,9 @@
    '("f" . find-file)
    '("g" . consult-ripgrep)
    '("G" . magit)
+   '("h" . beginning-of-buffer)
+   '("n" . end-of-buffer)
+   '("r" . query-replace)
    '("w" . other-window)
    '("o" . delete-other-windows))
   (meow-normal-define-key

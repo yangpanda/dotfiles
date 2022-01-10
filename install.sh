@@ -4,15 +4,17 @@ set -e
 
 PWD=$(pwd)
 
-ARCH_PACKAGES="starship git openssh neovim ranger emacs tmux bat exa ripgrep fd fzf zoxide alacritty \
+ARCH_PACKAGES="git openssh alacritty \
+starship ranger bat exa ripgrep fd fzf zoxide zellij \
+neovim emacs \
 noto-fonts-cjk noto-fonts-emoji ttf-hack\
 mpv zathura zathura-pdf-poppler \
-python-pip gcc clang cargo base-devel base-devel \
+python-pip gcc clang cargo base-devel \
 clash \
 librime fcitx5 fcitx5-chinese-addons fcitx5-qt fcitx5-gtk fcitx5-configtool fcitx5-material-color"
 
 ARCHLINUXCN_PACKAGES="netease-cloud-music qq-music-bin yay"
-AUR_PACKAGES="microsoft-edge-stable"
+AUR_PACKAGES="microsoft-edge-stable-bin"
 
 if [ "$(command -v pacman)" ]; then
     echo -e '\n[archlinuxcn]\nServer = https://mirrors.ustc.edu.cn/archlinuxcn/$arch' | sudo tee -a /etc/pacman.conf
@@ -57,8 +59,6 @@ ln -sfv $PWD/emacs $HOME/.config/
 # clash
 mkdir $HOME/.config/clash
 ln -sfv $PWD/clash ~/.config/
-#sudo ln -sfv $PWD/clash/clash.service /usr/lib/systemd/system/
-#sudo systemctl enable clash
 
 ## yay
 if [ "$(command -v yay)" ]; then

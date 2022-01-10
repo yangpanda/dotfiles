@@ -13,6 +13,8 @@
 (tree-sitter-load 'vue "vue")
 (add-to-list 'tree-sitter-major-mode-language-alist '(web-mode . vue))
 
+;; (tree-sitter-load 'yml "yaml")
+;; (add-to-list 'tree-sitter-major-mode-language-alist '(yaml-mode . yaml))
 
 (global-tree-sitter-mode)
 (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode)
