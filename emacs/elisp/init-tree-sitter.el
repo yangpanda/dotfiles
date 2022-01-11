@@ -1,22 +1,19 @@
-(straight-use-package 'tree-sitter)
-(straight-use-package 'tree-sitter-langs)
+(use-package tree-sitter
+  :straight t
+  :config
+  (add-to-list 'tree-sitter-load-path
+	       (expand-file-name "lib" user-emacs-directory))
+  (global-tree-sitter-mode))
 
-(require 'tree-sitter)
-(require 'tree-sitter-langs)
-
-(add-to-list 'tree-sitter-load-path
-	     (expand-file-name "lib" user-emacs-directory))
+(use-package tree-sitter-langs
+  :straight t
+  :requires tree-sitter
+  :hook (tree-sitter-after-on . tree-sitter-hl-mode))
 
 (tree-sitter-load 'elisp "elisp")
 (add-to-list 'tree-sitter-major-mode-language-alist '(emacs-lisp-mode . elisp))
 
 (tree-sitter-load 'vue "vue")
 (add-to-list 'tree-sitter-major-mode-language-alist '(web-mode . vue))
-
-;; (tree-sitter-load 'yml "yaml")
-;; (add-to-list 'tree-sitter-major-mode-language-alist '(yaml-mode . yaml))
-
-(global-tree-sitter-mode)
-(add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode)
 
 (provide 'init-tree-sitter)

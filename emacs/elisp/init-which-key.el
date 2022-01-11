@@ -1,6 +1,6 @@
-(straight-use-package 'which-key)
-
-(require 'which-key)
-(which-key-mode)
+(use-package which-key
+  :straight t
+  :config
+  (which-key-mode))
 
 (provide 'init-which-key)

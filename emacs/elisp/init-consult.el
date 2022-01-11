@@ -1,4 +1,4 @@
-(straight-use-package 'consult)
-
+(use-package consult
+  :straight t)
 
 (provide 'init-consult)

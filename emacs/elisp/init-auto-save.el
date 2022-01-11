@@ -1,21 +1,20 @@
-(straight-use-package
- '(auto-save :type git :host github :repo "manateelazycat/auto-save"))
+(setq make-backup-files nil
+      auto-save-list-file-prefix nil
+      auto-save-default nil)
 
-(require 'auto-save)
-(auto-save-enable)
-
-(setq make-backup-files nil)
-(setq auto-save-list-file-prefix nil)
-(setq auto-save-default nil)
-(setq auto-save-silent t)   ; quietly save
-(setq auto-save-delete-trailing-whitespace t)  ; automatically delete spaces at the end of the line when saving
-
-;;; custom predicates if you don't want auto save.
-;;; disable auto save mode when current filetype is an gpg file.
-(setq auto-save-disable-predicates
-      '((lambda ()
-      (string-suffix-p
-      "gpg"
-      (file-name-extension (buffer-name)) t))))
+(use-package auto-save
+  :straight (auto-save :type git
+		       :host github
+		       :repo "manateelazycat/auto-save")
+  :init
+  (setq auto-save-silent t
+	auto-save-delete-trailing-whitespace t)
+  :config
+  (setq auto-save-disable-predicates
+	'((lambda ()
+	    (string-suffix-p
+	     "gpg"
+	     (file-name-extension (buffer-name)) t))))
+  (auto-save-enable))
 
 (provide 'init-auto-save)

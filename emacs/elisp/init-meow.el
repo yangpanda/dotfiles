@@ -21,7 +21,8 @@
    '("8" . meow-digit-argument)
    '("9" . meow-digit-argument)
    '("0" . meow-digit-argument)
-   '("a" . org-agenda)
+   '("TAB" . meow-last-buffer)
+   '("a" . execute-extended-command)
    '("b" . consult-buffer)
    '("C" . org-capture)
    '("f" . find-file)
@@ -30,6 +31,8 @@
    '("h" . beginning-of-buffer)
    '("n" . end-of-buffer)
    '("r" . query-replace)
+   '("s" . ctrlf-forward-default)
+   '("R" . consult-recent-file)
    '("w" . other-window)
    '("o" . delete-other-windows))
   (meow-normal-define-key

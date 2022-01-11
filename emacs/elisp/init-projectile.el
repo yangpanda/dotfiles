@@ -1,8 +1,13 @@
-(straight-use-package 'projectile)
-(straight-use-package 'rg)
+(use-package projectile
+  :straight t
+  :init
+  (setq projectile-project-search-path '("~/code/"))
+  :bind-keymap
+  ("C-c p" . projectile-command-map)
+  :config
+  (projectile-mode +1))
 
-(projectile-mode +1)
-(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-(setq projectile-project-search-path '("~/code/" "~/.emacs.d"))
+(use-package rg
+  :straight t)
 
 (provide 'init-projectile)
