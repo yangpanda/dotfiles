@@ -2,7 +2,6 @@
   :straight t
   :init
   (setq projectile-project-search-path '("~/code/"))
-  :bind (("C-c p" . projectile-command-map))
   :config
   (projectile-mode +1))
 
